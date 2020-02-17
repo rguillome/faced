@@ -1,4 +1,10 @@
 import tensorflow as tf
+
+try:
+    import tensorflow.compat.v1 as tf
+except ImportError:
+    import tensorflow as tf
+
 import cv2
 import numpy as np
 import os
